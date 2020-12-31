@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    background-size:100% auto;
+}
+
+video{
+    position: fixed;
+    text-align: center;
+    /*right: 0;
+    bottom: 0;/*视频位置*/
+    top: 50%;
+    left: 50%;/*使视频适应屏幕居中*/
+    min-width: 100%;
+    min-height: 100%;/*使不会因视频尺寸造成页面需要滚动*/
+    width: 1920px auto;
+    height: 1080px auto;/*尺寸造成原视频大小*/
+    z-index: -11;/*z轴定位，小于0即可*/
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transition: 1s opacity;
+    transition: 1s opacity;
+    /*filter:blur(15px);/*背景模糊设置*/
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter:grayscale(100%);/*背景灰度设置*/
+    /*vertical-align: bottom;*/
+    display: block;
+    background: url("./yhjimg/login.jpg")no-repeat;
+    background-size: cover;
+}
+.yhjvideobg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -100; 
+}
+ 
+.yhjvideobg:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+#yhjlogin-box{
+    width:30%;
+    height:auto;
+    margin:0 auto ;
+    margin-top:13%;
+    text-align:center;
+    /*background:#00000060;/*登录边框颜色*/
+    padding:20px 50px;
+    }
+h1{
+    color:#fff;
+    font-family:"楷体";
+}
+.yhjform .yhjitem{
+    margin-top:15px;
+}
+.yhjform .yhjitem i{
+    font-size:18px;
+    color:#fff;
+}
+.yhjform .yhjitem input{
+    width:180px;
+    font-family: "Didot";
+    font-size:18px;
+    border:0;
+    background-color: transparent;/*使登录边框透明*/
+    border-bottom:2px solid #fff;/*登录输入条底线*/
+    padding:5px 10px;
+    color:#fff;
+}
+button{
+    margin-top:20px;
+    width:100px;
+    height:30px;
+    font-size:20px;
+    font-weight:700;
+    font-family: "Didot";
+    color:#fff;
+    text-align: center;
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    border:0;
+    border-radius:15px;
+}
+
+#yhjimg{
+    width: 30px;
+    height: 30px;
+}

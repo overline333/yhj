@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录界面</title>  
+	<link rel="stylesheet" href="yhjcss/yhjlogin.css" type="text/css">
+	<script type="text/javascript" src="yhjcss/yhjlogin01.js"></script>
+</head>
+<body>
+	<div id="yhjlogin-box">
+		<h1>欢迎来到杨海健的个人网站</h1>
+		<div class="yhjform">
+			<div class="yhjvideobg">
+				<video class="yhj" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+					<source src="./yhjvideo/yhjlogin.mp4" type="video/mp4">
+				</video>
+			</div>
+			<form action="yhjcss/yhjlogin01.js">
+				<div class="yhjitem">
+			   		<i class="fa fa-github-alt" style="font-size:24px"><img src="./yhjimg/yhjname.png" id="yhjimg"></i>
+			   		<input type="text" placeholder="Username">		   
+				</div>
+				<div class="yhjitem">
+			   		<i class="fa fa-search" style="font-size:24px"><img src="./yhjimg/yhjpass.png" id="yhjimg"></i>
+			   		<input type="text" placeholder="Password">		   
+				</div>
+				<div id="yhjlogin_control">
+					<button type="button" onclick="alert('密码输入错误！请尝试重新输入或忘记密码！')">Login</button>
+					<a id="yhj_forget_pwd" href="yhj_forget_pwd.html">忘记密码？</a>
+				</div>
+			</form>	
+		</div>
+	</div>
+</body>
+</html>
